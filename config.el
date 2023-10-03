@@ -79,6 +79,13 @@
   (setq org-bullets-bullet-list '("◉" "○" "✸" "✿" "✤" "✜" "❀" "✦" "✷"))
   :hook (org-mode . org-bullets-mode))
 
+(setq user-full-name "isham"
+      user-mail-address "ishambhandari007@gmail.com")
+
+(global-set-key (kbd "C-k") (lambda () (interactive) (previous-line 10)))
+(global-set-key (kbd "C-j") (lambda () (interactive) (next-line 10)))
+
+
 (after! evil
   (map! :map evil-window-map
         "C-w h" nil
